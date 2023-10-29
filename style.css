@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+}
+nav >ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 5vmax;
+}
+nav >ul >li{
+    width: 7vmax;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all linear 0.5s;
+}
+nav >ul >li >h1{
+    text-align: center;
+    font-family: 'Edu TAS Beginner', cursive;
+    margin-right: 7vmax;
+    letter-spacing: 0.2vmax;
+    text-shadow: 0 0 0.2vmax black;
+}
+nav >ul >li >img{
+    height: 6vh;
+}
+nav >ul >li >h3{
+    text-align: center;
+    font-family: cursive;
+    font-size: 1vmax;
+}
+nav >ul >li:hover h3{
+    color: blue;
+}
+.filler{
+    height: 20vh;
+    width: 100%;
+}
+.page1{
+    height: 60vh;
+    width: 100%;
+    background-image: url(https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/heroes/india-festive-cons-dell-inspiron-5430nt-uhp-2403-09-in-hero-lf-2400x696-1-hr.png?fmt=png&op_usm=1.75,0.3,2,0&resMode=sharp2&size=1536,446&hei=446&wid=1536);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6vmax 5vmax;
+}
+.page1 >h3{
+    font-family: sans-serif;
+    margin: 1vmax 0;
+    color: white;
+}
+.page1 >h1{
+    font-family: sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 4vmax;
+}
+.page1 >p{
+    color: white;
+    font-family: sans-serif;
+    margin: 0.5vmax 0;
+
+}
+#forhome{
+    background-color: white;
+    color: blue;
+}
+.page1 >button{
+    margin: 2vmax 0.5vmax;
+    font-size: 1.5vmax;
+    padding: 0.7vmax 1.5vmax;
+    font-weight: 700;
+    background-color: transparent;
+    border: 0.1vmax solid white;
+    color: white;
+}
+.page2{
+    height: 75vh;
+    width: 100%;
+    /* background-color: pink; */
+}
+.page2-heading{
+    height: 15vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2-heading >h1{
+    font-family: sans-serif;
+    font-size: 3.5vmax;
+}
+.page2-img-contener{
+    height: 60vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page2-img1 ,.page2-img2 ,.page2-img3{
+    height: 100%;
+    width: 31%;
+    /* background-color: red; */
+    display: flex;
+    align-items: end;
+}
+.page2-img1{
+    background-image: url(https://i.pinimg.com/236x/36/72/a3/3672a3d611f7c87cd7197a38d697ef9c.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page2-img2{
+    background-image: url(https://i.pinimg.com/564x/0e/07/80/0e0780cec5095b930a6e5043d683ec03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page2-img3{
+    background-image: url(https://i.pinimg.com/236x/a7/48/c9/a748c928ae1981e96da0b5d075e91c6f.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page2-img1 >h2,.page2-img2 >h2,.page2-img3 >h2{
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.716);
+    width: 100%;
+    padding: 0.5vmax 0.7vmax;
+    color: white;
+}
+.page3{
+    height: 80vh;
+    width: 100%;
+    /* background-color: palegreen; */
+    display: flex;
+}
+.page3-left{
+    height: 100%;
+    width: 60%;
+    background-image: url(https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/modules/india-festive-cons-dell-xps-9530t-uhp-2403-09-in-mod-rf-1023x842.png?fmt=png-alpha&wid=1023&hei=842);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all linear 0.5s;
+}
+.page3-left:hover{
+    filter: drop-shadow(0 0 2vmax rgba(0, 0, 0, 0.737));
+
+}
+.page3-right{
+    height: 100%;
+    width: 40%;
+    /* background-color: lightcoral; */
+    padding: 6vmax;
+    font-family: sans-serif;
+    text-align: center;
+}
+.page3-right >h4{
+    margin-top: 5vmax;
+    margin-bottom: 1vmax;
+}
+.page3-right >h2{
+    font-size: 2.5vmax;
+    margin-bottom: 1.5vmax;
+}
+.page3-right >p{
+    margin-bottom: 1vmax;
+}
+.page3-right >h6{
+    margin-bottom: 1.7vmax;
+}
+.page3-btns{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+}
+.page3-btns >button{
+    padding: 1vmax;
+    font-size: 1.3vmax;
+    font-family: sans-serif;
+    color: blue;
+    border: none;
+    background-color: transparent;
+}
+.page3-btns >hr{
+    height: 6vh;
+    border: 0.1vmax solid rgba(0, 0, 0, 0.457);
+}
+.page4{
+    height: 80vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+}
+.page4-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: orchid; */
+    text-align: center;
+    padding: 5vmax;
+    font-family: sans-serif;
+}
+.page4-left >h4{
+    margin-top: 5vmax;
+    margin-bottom: 2vmax;
+}
+.page4-left >h1{
+    font-weight: 100;
+    font-size: 2vmax;
+    margin-bottom: 1vmax;
+}
+.page4-left >h5{
+    margin: 1vmax 0;
+    font-size: 1.3vmax;
+    font-weight: 100;
+}
+.page4-left >h6{
+    margin-bottom: 2vmax;
+}
+.page4-right{
+    height: 100%;
+    width: 60%;
+    background-image: url(https://i.dell.com/is/image/DellContent//content/dam/ss2/page-specific/dell-homepage/apj/heroes/uhp-banners-s2723hc-right-facing.png?fmt=png-alpha&wid=1023&hei=842);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all linear 0.5s;
+}
+.page4-right:hover{
+    filter: drop-shadow(0 0 1vmax rgba(0, 0, 0, 0.639));
+}
+.page5{
+    height: 80vh;
+    width: 100%;
+    /* background-color: rgb(150, 84, 95); */
+    display: flex;
+}
+.page5-left{
+    height: 100%;
+    width: 60%;
+    background-image: url(https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/apj/modules/show-cons-dell-alienware-610m-920h-kb700-uhp-2402-04-in-homepage-module-rf-1023x842.png?fmt=png-alpha&wid=1023&hei=842);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all linear 0.5s;
+}
+.page5-left:hover{
+    filter: drop-shadow(0 0 1vmax rgba(0, 0, 0, 0.639));
+}
+.page5-right{
+    height: 100%;
+    width: 40%;
+    padding: 5vmax;
+    /* background-color: aquamarine; */
+    text-align: center;
+    font-family: sans-serif;
+}
+.page5-right >h3{
+    margin-top: 5vmax;
+    margin-bottom: 1.5vmax;
+}
+.page5-right >h1{
+    font-weight: 100;
+    font-size: 3vmax;
+    margin-bottom: 1vmax;
+}
+.page5-right >p{
+    margin-bottom: 1.3vmax;
+}
+.page5-right >button{
+    padding: 1vmax;
+    font-size: 1.5vmax;
+    font-family: sans-serif;
+    color: blue;
+    border: none;
+    background-color: transparent;
+}
+.links{
+    height: 75vh;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 5vmax 10vmax;
+}
+.links >ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    font-family: sans-serif;
+}
+.dark{
+    font-weight: 900;
+}
+.footer{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer >ul{
+    list-style: none;
+    display: flex;
+    gap: 5vmax;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.605);
+}
